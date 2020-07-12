@@ -1,0 +1,22 @@
+### Headers settings
+company: George Kh.
+
+### Xcode project settings
+project_name: TestHotels-Viper
+xcodeproj_path: TestHotels-Viper.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: TestHotels-Viper
+
+# The file path for new modules
+project_file_path: TestHotels-Viper/Source/Modules
+
+# The Xcode group path to new modules
+project_group_path: TestHotels-Viper/Source/Modules
+
+### Templates
+templates:
+- {name: rviper_controller}
+- {name: mvvm_controller}
+- {name: swifty_viper}
