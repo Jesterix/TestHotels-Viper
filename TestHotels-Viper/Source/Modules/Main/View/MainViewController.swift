@@ -41,13 +41,17 @@ class MainViewController: UIViewController, MainViewInput {
     
     @objc private func sortHotels() {
         if mainView.switchControl.isOn {
-            //            viewModel.hotels.value.sort
-            //                { $0.suitesAvailability.count < $1.suitesAvailability.count }
+            output.sortDataBy(parameter: Sorting.availability)
         } else {
-            //            viewModel.hotels.value.sort
-            //                { $0.distance < $1.distance }
+            output.sortDataBy(parameter: Sorting.distance)
         }
         mainView.tableView.reloadData()
+    }
+    
+    func reloadData() {
+        DispatchQueue.main.async {
+            self.mainView.tableView.reloadData()
+        }
     }
 }
 

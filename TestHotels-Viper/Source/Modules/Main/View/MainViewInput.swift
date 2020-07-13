@@ -14,4 +14,6 @@ protocol MainViewInput: class {
     */
 
     func setupInitialState()
+    
+    func reloadData()
 }

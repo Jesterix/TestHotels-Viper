@@ -11,4 +11,5 @@ import Foundation
 protocol MainInteractorInput {
     func loadData()
     func getData() -> [Hotel]
+    func sortDataBy(parameter: Sorting)
 }

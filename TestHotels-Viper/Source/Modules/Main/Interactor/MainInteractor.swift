@@ -19,6 +19,7 @@ class MainInteractor: MainInteractorInput {
             switch result {
             case .success(let hotels):
                 self.hotels = hotels
+                self.output.reloadData()
             case .failure(let error):
                 self.error = error
             }
@@ -27,5 +28,14 @@ class MainInteractor: MainInteractorInput {
     
     func getData() -> [Hotel] {
         hotels
+    }
+    
+    func sortDataBy(parameter: Sorting) {
+        switch parameter {
+        case .availability:
+            hotels.sort { $0.suitesAvailability.count < $1.suitesAvailability.count }
+        case .distance:
+            hotels.sort { $0.distance < $1.distance }
+        }
     }
 }

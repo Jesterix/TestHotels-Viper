@@ -9,5 +9,5 @@
 import Foundation
 
 protocol MainInteractorOutput: class {
-
+    func reloadData()
 }

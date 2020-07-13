@@ -26,4 +26,12 @@ class MainPresenter: MainModuleInput, MainViewOutput, MainInteractorOutput {
     func dataForRowAt(indexPath: IndexPath) -> Hotel {
         interactor.getData()[indexPath.row]
     }
+    
+    func sortDataBy(parameter: Sorting) {
+        interactor.sortDataBy(parameter: parameter)
+    }
+    
+    func reloadData() {
+        view.reloadData()
+    }
 }
