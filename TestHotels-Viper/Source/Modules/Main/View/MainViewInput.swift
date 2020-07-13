@@ -7,13 +7,6 @@
 //
 
 protocol MainViewInput: class {
-
-    /**
-        @author Jesterix
-        Setup initial state of the view
-    */
-
     func setupInitialState()
-    
     func reloadData()
 }

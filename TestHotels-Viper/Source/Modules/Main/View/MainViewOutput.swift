@@ -9,17 +9,8 @@
 import Foundation
 
 protocol MainViewOutput {
-
-    /**
-        @author Jesterix
-        Notify presenter that view is ready
-    */
-
     func viewIsReady()
-    
     func numberOfRowsInSection() -> Int
-    
     func dataForRowAt(indexPath: IndexPath) -> Hotel
-    
     func sortDataBy(parameter: Sorting)
 }
