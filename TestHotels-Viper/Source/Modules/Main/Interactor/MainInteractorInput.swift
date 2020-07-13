@@ -9,5 +9,6 @@
 import Foundation
 
 protocol MainInteractorInput {
-
+    func loadData()
+    func getData() -> [Hotel]
 }

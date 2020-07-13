@@ -32,12 +32,28 @@ class MainViewController: UIViewController, MainViewInput {
         mainView.tableView.register(
             HotelCell.self,
             forCellReuseIdentifier: HotelCell.reuseID)
+        
+        mainView.switchControl.addTarget(
+            self,
+            action: #selector(sortHotels),
+            for: .valueChanged)
+    }
+    
+    @objc private func sortHotels() {
+        if mainView.switchControl.isOn {
+            //            viewModel.hotels.value.sort
+            //                { $0.suitesAvailability.count < $1.suitesAvailability.count }
+        } else {
+            //            viewModel.hotels.value.sort
+            //                { $0.distance < $1.distance }
+        }
+        mainView.tableView.reloadData()
     }
 }
 
 extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return output.numberOfRowsInSection()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,14 +62,20 @@ extension MainViewController: UITableViewDataSource {
                 return UITableViewCell()
         }
         
-//        cell.nameLabel.text = viewModel.hotels.value[indexPath.row].name
-//        cell.distanceLabel.text = "Distance from center: " + String(viewModel.hotels.value[indexPath.row].distance)
-//        cell.suitesAvailableLabel.text = "Available suites: \(viewModel.hotels.value[indexPath.row].suitesAvailability.count)"
-        
+        cell.configure(with: output.dataForRowAt(indexPath: indexPath))
         return cell
     }
 }
 
 extension MainViewController: UITableViewDelegate {
-    
+//    func tableView(
+//        _ tableView: UITableView,
+//        didSelectRowAt indexPath: IndexPath
+//    ) {
+//        tableView.deselectRow(at: indexPath, animated: false)
+//
+//        self.navigationController?.pushViewController(
+//            DetailViewController(hotel: self.viewModel.hotels.value[indexPath.row]),
+//            animated: true)
+//    }
 }

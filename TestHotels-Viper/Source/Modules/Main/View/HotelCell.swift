@@ -47,3 +47,13 @@ class HotelCell: UITableViewCell {
     }
 }
 
+extension HotelCell {
+    func configure(with hotel: Hotel) {
+        self.nameLabel.text = hotel.name
+        self.distanceLabel.text = "Distance from center: "
+            + String(hotel.distance)
+        self.suitesAvailableLabel.text = "Available suites: "
+            + "\(hotel.suitesAvailability.count)"
+    }
+}
+
