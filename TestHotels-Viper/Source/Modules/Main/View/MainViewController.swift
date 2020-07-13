@@ -12,6 +12,15 @@ class MainViewController: UIViewController, MainViewInput {
 
     var output: MainViewOutput!
     var mainView: MainView!
+    private var isAnimating = false {
+        didSet {
+            if isAnimating {
+                mainView.activityIndicator.startAnimating()
+            } else {
+                mainView.activityIndicator.stopAnimating()
+            }
+        }
+    }
     
     override func loadView() {
         mainView = MainView()
@@ -22,6 +31,7 @@ class MainViewController: UIViewController, MainViewInput {
     override func viewDidLoad() {
         super.viewDidLoad()
         output.viewIsReady()
+        setupInitialState()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,9 +62,11 @@ class MainViewController: UIViewController, MainViewInput {
     }
     
     func reloadData() {
-        DispatchQueue.main.async {
-            self.mainView.tableView.reloadData()
-        }
+        self.mainView.tableView.reloadData()
+    }
+    
+    func animate(loading: Bool) {
+        isAnimating = loading
     }
 }
 

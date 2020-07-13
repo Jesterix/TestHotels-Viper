@@ -15,7 +15,7 @@ class MainPresenter: MainModuleInput, MainViewOutput, MainInteractorOutput {
     var router: MainRouterInput!
 
     func viewIsReady() {
-        view.setupInitialState()
+        view.animate(loading: true)
         interactor.loadData()
     }
     
@@ -32,7 +32,10 @@ class MainPresenter: MainModuleInput, MainViewOutput, MainInteractorOutput {
     }
     
     func reloadData() {
-        view.reloadData()
+        DispatchQueue.main.async {
+            self.view.animate(loading: false)
+            self.view.reloadData()
+        }
     }
     
     func didSelectRowAt(indexPath: IndexPath) {

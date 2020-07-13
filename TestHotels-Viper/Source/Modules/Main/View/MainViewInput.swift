@@ -9,4 +9,5 @@
 protocol MainViewInput: class {
     func setupInitialState()
     func reloadData()
+    func animate(loading: Bool)
 }
