@@ -13,4 +13,5 @@ protocol MainViewOutput {
     func numberOfRowsInSection() -> Int
     func dataForRowAt(indexPath: IndexPath) -> Hotel
     func sortDataBy(parameter: Sorting)
+    func didSelectRowAt(indexPath: IndexPath)
 }

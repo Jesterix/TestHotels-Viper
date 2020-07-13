@@ -23,7 +23,10 @@ class MainViewController: UIViewController, MainViewInput {
         super.viewDidLoad()
         output.viewIsReady()
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+    }
 
     // MARK: MainViewInput
     func setupInitialState() {
@@ -72,14 +75,12 @@ extension MainViewController: UITableViewDataSource {
 }
 
 extension MainViewController: UITableViewDelegate {
-//    func tableView(
-//        _ tableView: UITableView,
-//        didSelectRowAt indexPath: IndexPath
-//    ) {
-//        tableView.deselectRow(at: indexPath, animated: false)
-//
-//        self.navigationController?.pushViewController(
-//            DetailViewController(hotel: self.viewModel.hotels.value[indexPath.row]),
-//            animated: true)
-//    }
+    func tableView(
+        _ tableView: UITableView,
+        didSelectRowAt indexPath: IndexPath
+    ) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        
+        output.didSelectRowAt(indexPath: indexPath)
+    }
 }

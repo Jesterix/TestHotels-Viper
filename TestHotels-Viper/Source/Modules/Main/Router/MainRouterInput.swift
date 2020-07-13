@@ -9,5 +9,5 @@
 import Foundation
 
 protocol MainRouterInput {
-
+    func pushToDetailView(for hotel: Hotel)
 }

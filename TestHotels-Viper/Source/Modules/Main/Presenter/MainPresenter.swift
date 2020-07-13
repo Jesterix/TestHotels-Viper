@@ -34,4 +34,8 @@ class MainPresenter: MainModuleInput, MainViewOutput, MainInteractorOutput {
     func reloadData() {
         view.reloadData()
     }
+    
+    func didSelectRowAt(indexPath: IndexPath) {
+        router.pushToDetailView(for: dataForRowAt(indexPath: indexPath))
+    }
 }

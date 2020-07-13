@@ -20,6 +20,7 @@ class MainModuleConfigurator {
     private func configure(viewController: MainViewController) {
 
         let router = MainRouter()
+        router.view = viewController
 
         let presenter = MainPresenter()
         presenter.view = viewController

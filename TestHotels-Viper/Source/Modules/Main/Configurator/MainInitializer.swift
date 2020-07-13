@@ -13,6 +13,6 @@ class MainModuleInitializer {
         let defaultViewController = MainViewController()
         let configurator = MainModuleConfigurator()
         configurator.configureModuleForViewInput(viewInput: defaultViewController)
-        return defaultViewController
+        return UINavigationController(rootViewController: defaultViewController)
     }
 }
