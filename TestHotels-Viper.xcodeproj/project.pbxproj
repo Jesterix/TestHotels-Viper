@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09A5A0EF41A860B5B2D23D29 /* DetailInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E064E521976DFF688BF56389 /* DetailInteractorInput.swift */; };
+		115618876F3DE2CB8614A13B /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB4D6A167DC1EC95E287FD0 /* DetailInteractor.swift */; };
+		17C09703627C13A6FC80E417 /* DetailViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D98193A4EEA8DD9E3E48DFD /* DetailViewOutput.swift */; };
+		191166EC16D3299A63B3F983 /* DetailInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E5BBD4D720928D1B5B2D0B /* DetailInitializer.swift */; };
+		20082383226FDC3F81D42A35 /* DetailRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE6785A8E419A3E2CC33943 /* DetailRouterInput.swift */; };
 		283DB171C88C5614161AD640 /* MainModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AAB01C7836C59CB0E6EF86 /* MainModuleInput.swift */; };
+		2C434BA31603C6904A8106C8 /* DetailViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634140174528B6DA8AC15D4E /* DetailViewInput.swift */; };
 		3D9B793FD58891F6B046FD1B /* MainRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34236E5EBA31F41682A7106E /* MainRouterInput.swift */; };
+		48202598A286473EC6C77ACC /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC80C78AAAB1EA6B59C7875 /* DetailRouter.swift */; };
 		566AD7EB9B2A105267E5C181 /* MainInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC47C9820FFBAC7703493862 /* MainInitializer.swift */; };
+		5E130B28170139D9BD37E156 /* DetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5E55CC08EFB90F14B85FED /* DetailConfigurator.swift */; };
 		5EE762EB24BB35400024E801 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE762EA24BB35400024E801 /* AppDelegate.swift */; };
 		5EE762ED24BB35400024E801 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE762EC24BB35400024E801 /* SceneDelegate.swift */; };
 		5EE762F424BB35450024E801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE762F324BB35450024E801 /* Assets.xcassets */; };
@@ -17,7 +25,7 @@
 		5EE762FF24BB494E0024E801 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE762FE24BB494E0024E801 /* MainView.swift */; };
 		5EE7630224BB498F0024E801 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7630024BB498E0024E801 /* Extensions.swift */; };
 		5EE7630324BB498F0024E801 /* UIView+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7630124BB498F0024E801 /* UIView+SnapKit.swift */; };
-		5EE7630724BB49F10024E801 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5EE7630624BB49F10024E801 /* SnapKit */; };
+		5EE7630724BB49F10024E801 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 5EE7630624BB49F10024E801 /* SwiftPackageProductDependency */; };
 		5EE7630924BC63C30024E801 /* HotelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7630824BC63C30024E801 /* HotelCell.swift */; };
 		5EE7630D24BC71340024E801 /* HotelDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7630A24BC71330024E801 /* HotelDetails.swift */; };
 		5EE7630E24BC71340024E801 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7630B24BC71330024E801 /* NetworkManager.swift */; };
@@ -25,8 +33,12 @@
 		5EE7631224BC8CB70024E801 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE7631124BC8CB70024E801 /* Enums.swift */; };
 		6BB5DCA09A81890E1E350F7D /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D87B15A9B6626003B4B0EE /* MainConfigurator.swift */; };
 		7D0BDF34D5B6740DFF30C839 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA9BA202691B9932FFED494 /* MainViewController.swift */; };
+		A32EB1AC9B3CD77FB0301F38 /* DetailModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E60773511197E7F09EF15A4 /* DetailModuleInput.swift */; };
+		AD2B403BB5F2765348B7E617 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4E00EA3647F860422B5D89 /* DetailViewController.swift */; };
+		B2CCA8229A7A0D779FF2FDD5 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82B44FB8F6E653B686824B6 /* DetailPresenter.swift */; };
 		BF45435977435660DE4839A9 /* MainViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28792BC6592C35E3BEB386 /* MainViewOutput.swift */; };
 		CA824488FBA5A89DAF597EA2 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D88D875335C82B867C9061 /* MainRouter.swift */; };
+		CF8BF0E33783A040F0446433 /* DetailInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2FE029306A07E93B5B4189 /* DetailInteractorOutput.swift */; };
 		D959C7C81B5059E924968147 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394483AD32DF4DF6A6D87604 /* MainInteractor.swift */; };
 		DED1324E235031D395B5B447 /* MainInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0821376134A1A945D7728055 /* MainInteractorOutput.swift */; };
 		EA3A266D78DA2518809CE142 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F59F0ED8352F1B8D8BE525C /* MainPresenter.swift */; };
@@ -36,8 +48,13 @@
 
 /* Begin PBXFileReference section */
 		0821376134A1A945D7728055 /* MainInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractorOutput.swift; sourceTree = "<group>"; };
+		0D2FE029306A07E93B5B4189 /* DetailInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailInteractorOutput.swift; sourceTree = "<group>"; };
+		1E60773511197E7F09EF15A4 /* DetailModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailModuleInput.swift; sourceTree = "<group>"; };
+		2D98193A4EEA8DD9E3E48DFD /* DetailViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailViewOutput.swift; sourceTree = "<group>"; };
 		34236E5EBA31F41682A7106E /* MainRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouterInput.swift; sourceTree = "<group>"; };
 		394483AD32DF4DF6A6D87604 /* MainInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		3A4E00EA3647F860422B5D89 /* DetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3DB4D6A167DC1EC95E287FD0 /* DetailInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 		5EE762E724BB35400024E801 /* TestHotels-Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestHotels-Viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE762EA24BB35400024E801 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EE762EC24BB35400024E801 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,13 +70,20 @@
 		5EE7630C24BC71340024E801 /* Hotel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
 		5EE7631124BC8CB70024E801 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		5F59F0ED8352F1B8D8BE525C /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		634140174528B6DA8AC15D4E /* DetailViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailViewInput.swift; sourceTree = "<group>"; };
 		8EA9BA202691B9932FFED494 /* MainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		98D88D875335C82B867C9061 /* MainRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		9DE6785A8E419A3E2CC33943 /* DetailRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailRouterInput.swift; sourceTree = "<group>"; };
+		ACC80C78AAAB1EA6B59C7875 /* DetailRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		B8AAB01C7836C59CB0E6EF86 /* MainModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainModuleInput.swift; sourceTree = "<group>"; };
 		C3D87B15A9B6626003B4B0EE /* MainConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
 		CC47C9820FFBAC7703493862 /* MainInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInitializer.swift; sourceTree = "<group>"; };
 		D543659BE6ABCA016A563A64 /* MainViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewInput.swift; sourceTree = "<group>"; };
+		DB5E55CC08EFB90F14B85FED /* DetailConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailConfigurator.swift; sourceTree = "<group>"; };
+		E064E521976DFF688BF56389 /* DetailInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailInteractorInput.swift; sourceTree = "<group>"; };
+		E82B44FB8F6E653B686824B6 /* DetailPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		F250051B0B47CC2C14C38E90 /* MainInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractorInput.swift; sourceTree = "<group>"; };
+		F4E5BBD4D720928D1B5B2D0B /* DetailInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailInitializer.swift; sourceTree = "<group>"; };
 		FA28792BC6592C35E3BEB386 /* MainViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,17 +92,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EE7630724BB49F10024E801 /* SnapKit in Frameworks */,
+				5EE7630724BB49F10024E801 /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F40195F21C5ED8BC1F189A7 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				27B9A4603B23E07EBCD660D8 /* View */,
+				8C3128F5C237EB2DD8898C10 /* Presenter */,
+				A3C1A68210E1BF836482DE3C /* Interactor */,
+				F47333BA68C52548B3776D66 /* Router */,
+				A0C47942EEA3E4F826318072 /* Configurator */,
+			);
+			name = Detail;
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		115B14A6E6F3D095CE99E6B6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				3BA5D04823B0801862EDA7B0 /* Main */,
+				0F40195F21C5ED8BC1F189A7 /* Detail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -100,6 +138,17 @@
 				5F59F0ED8352F1B8D8BE525C /* MainPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		27B9A4603B23E07EBCD660D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				634140174528B6DA8AC15D4E /* DetailViewInput.swift */,
+				2D98193A4EEA8DD9E3E48DFD /* DetailViewOutput.swift */,
+				3A4E00EA3647F860422B5D89 /* DetailViewController.swift */,
+			);
+			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		3BA5D04823B0801862EDA7B0 /* Main */ = {
@@ -193,6 +242,37 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		8C3128F5C237EB2DD8898C10 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1E60773511197E7F09EF15A4 /* DetailModuleInput.swift */,
+				E82B44FB8F6E653B686824B6 /* DetailPresenter.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A0C47942EEA3E4F826318072 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				DB5E55CC08EFB90F14B85FED /* DetailConfigurator.swift */,
+				F4E5BBD4D720928D1B5B2D0B /* DetailInitializer.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		A3C1A68210E1BF836482DE3C /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E064E521976DFF688BF56389 /* DetailInteractorInput.swift */,
+				0D2FE029306A07E93B5B4189 /* DetailInteractorOutput.swift */,
+				3DB4D6A167DC1EC95E287FD0 /* DetailInteractor.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		D299559D25621CBBE7F67664 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +281,16 @@
 				5EE7630424BB49940024E801 /* Extensions */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		F47333BA68C52548B3776D66 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9DE6785A8E419A3E2CC33943 /* DetailRouterInput.swift */,
+				ACC80C78AAAB1EA6B59C7875 /* DetailRouter.swift */,
+			);
+			name = Router;
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +310,7 @@
 			);
 			name = "TestHotels-Viper";
 			packageProductDependencies = (
-				5EE7630624BB49F10024E801 /* SnapKit */,
+				5EE7630624BB49F10024E801 /* SwiftPackageProductDependency */,
 			);
 			productName = "TestHotels-Viper";
 			productReference = 5EE762E724BB35400024E801 /* TestHotels-Viper.app */;
@@ -251,7 +341,7 @@
 			);
 			mainGroup = 5EE762DE24BB35400024E801;
 			packageReferences = (
-				5EE7630524BB49F10024E801 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				5EE7630524BB49F10024E801 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 5EE762E824BB35400024E801 /* Products */;
 			projectDirPath = "";
@@ -301,6 +391,18 @@
 				6BB5DCA09A81890E1E350F7D /* MainConfigurator.swift in Sources */,
 				5EE762FF24BB494E0024E801 /* MainView.swift in Sources */,
 				566AD7EB9B2A105267E5C181 /* MainInitializer.swift in Sources */,
+				2C434BA31603C6904A8106C8 /* DetailViewInput.swift in Sources */,
+				17C09703627C13A6FC80E417 /* DetailViewOutput.swift in Sources */,
+				AD2B403BB5F2765348B7E617 /* DetailViewController.swift in Sources */,
+				A32EB1AC9B3CD77FB0301F38 /* DetailModuleInput.swift in Sources */,
+				B2CCA8229A7A0D779FF2FDD5 /* DetailPresenter.swift in Sources */,
+				09A5A0EF41A860B5B2D23D29 /* DetailInteractorInput.swift in Sources */,
+				CF8BF0E33783A040F0446433 /* DetailInteractorOutput.swift in Sources */,
+				115618876F3DE2CB8614A13B /* DetailInteractor.swift in Sources */,
+				20082383226FDC3F81D42A35 /* DetailRouterInput.swift in Sources */,
+				48202598A286473EC6C77ACC /* DetailRouter.swift in Sources */,
+				5E130B28170139D9BD37E156 /* DetailConfigurator.swift in Sources */,
+				191166EC16D3299A63B3F983 /* DetailInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +594,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5EE7630524BB49F10024E801 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		5EE7630524BB49F10024E801 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
@@ -503,9 +605,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5EE7630624BB49F10024E801 /* SnapKit */ = {
+		5EE7630624BB49F10024E801 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5EE7630524BB49F10024E801 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 5EE7630524BB49F10024E801 /* RemoteSwiftPackageReference */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
