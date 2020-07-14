@@ -42,4 +42,16 @@ struct HotelDetails: Codable {
         }
         imageName = String(name.split(separator: ".")[0])
     }
+
+    init(from hotel: Hotel) {
+        imageName = nil
+        lat = 0
+        lon = 0
+        id = hotel.id
+        name = hotel.name
+        address = hotel.address
+        stars = hotel.stars
+        distance = hotel.distance
+        suitesAvailability = hotel.suitesAvailability
+    }
 }

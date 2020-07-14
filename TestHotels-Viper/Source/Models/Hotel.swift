@@ -28,4 +28,13 @@ struct Hotel: Codable {
             separator: ":",
             omittingEmptySubsequences: true).map { String($0) }
     }
+
+    init() {
+        id = 0
+        name = "No data"
+        address = "No data"
+        stars = 0
+        distance = 0
+        suitesAvailability = []
+    }
 }

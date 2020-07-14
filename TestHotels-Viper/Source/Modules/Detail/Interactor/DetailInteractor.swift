@@ -10,12 +10,16 @@ class DetailInteractor: DetailInteractorInput {
 
     weak var output: DetailInteractorOutput!
 
+    private var dataManager = NetworkManager()
+
     var hotel: Hotel? = nil
     var hotelDetails: HotelDetails? = nil
-    let noDataText = "no data"
 
     func getData() -> HotelDetails {
-        
+        guard let hotel = hotel else {
+            return HotelDetails(from: Hotel())
+        }
+        return hotelDetails ?? HotelDetails(from: hotel)
     }
 
     func loadData() {
