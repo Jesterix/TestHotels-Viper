@@ -9,14 +9,12 @@
 import UIKit
 
 class DetailModuleInitializer: NSObject {
-
-    //Connect with object on storyboard
-    @IBOutlet weak var detailViewController: DetailViewController!
-
-    override func awakeFromNib() {
-
+    func buildDetail(with hotel: Hotel) -> UIViewController {
+        let detailViewController = DetailViewController()
         let configurator = DetailModuleConfigurator()
-        configurator.configureModuleForViewInput(viewInput: detailViewController)
+        configurator.configureModuleForViewInput(
+            viewInput: detailViewController,
+            data: hotel)
+        return detailViewController
     }
-
 }

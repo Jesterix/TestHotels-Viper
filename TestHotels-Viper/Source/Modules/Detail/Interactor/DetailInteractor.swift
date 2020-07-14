@@ -10,4 +10,7 @@ class DetailInteractor: DetailInteractorInput {
 
     weak var output: DetailInteractorOutput!
 
+    var hotel: Hotel? = nil
+    var hotelDetails: HotelDetails? = nil
+    let noDataText = "no data"
 }
