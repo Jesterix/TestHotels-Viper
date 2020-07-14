@@ -9,5 +9,5 @@
 import Foundation
 
 protocol DetailInteractorOutput: class {
-
+    func onDetailLoad()
 }

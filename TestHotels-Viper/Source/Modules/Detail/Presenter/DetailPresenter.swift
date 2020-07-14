@@ -28,4 +28,8 @@ class DetailPresenter: DetailModuleInput, DetailViewOutput, DetailInteractorOutp
             distance: "Distance from center: \(details.distance)",
             suitesAvailability: "Suites available: " + details.suitesAvailability.joined(separator: ", "))
     }
+
+    func onDetailLoad() {
+        view.updateView(with: prepareViewModel())
+    }
 }
