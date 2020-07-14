@@ -11,7 +11,7 @@ class MainRouter: MainRouterInput {
     weak var view: UIViewController!
     
     func pushToDetailView(for hotel: Hotel) {
-        let detailViewController = UIViewController()
+        let detailViewController = DetailModuleInitializer().buildDetail(with: hotel)
         
         view.navigationController?.pushViewController(
             detailViewController,

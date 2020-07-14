@@ -14,4 +14,5 @@ protocol DetailViewInput: class {
     */
 
     func setupInitialState()
+    func updateView(with data: DetailViewModel)
 }

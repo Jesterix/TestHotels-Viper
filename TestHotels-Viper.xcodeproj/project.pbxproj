@@ -16,6 +16,7 @@
 		2C434BA31603C6904A8106C8 /* DetailViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634140174528B6DA8AC15D4E /* DetailViewInput.swift */; };
 		3D9B793FD58891F6B046FD1B /* MainRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34236E5EBA31F41682A7106E /* MainRouterInput.swift */; };
 		44ACE06424BE03830034ACB0 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ACE06324BE03830034ACB0 /* DetailView.swift */; };
+		44ACE06624BE09D30034ACB0 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44ACE06524BE09D30034ACB0 /* DetailViewModel.swift */; };
 		48202598A286473EC6C77ACC /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC80C78AAAB1EA6B59C7875 /* DetailRouter.swift */; };
 		566AD7EB9B2A105267E5C181 /* MainInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC47C9820FFBAC7703493862 /* MainInitializer.swift */; };
 		5E130B28170139D9BD37E156 /* DetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5E55CC08EFB90F14B85FED /* DetailConfigurator.swift */; };
@@ -57,6 +58,7 @@
 		3A4E00EA3647F860422B5D89 /* DetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3DB4D6A167DC1EC95E287FD0 /* DetailInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 		44ACE06324BE03830034ACB0 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		44ACE06524BE09D30034ACB0 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		5EE762E724BB35400024E801 /* TestHotels-Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestHotels-Viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE762EA24BB35400024E801 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EE762EC24BB35400024E801 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				2D98193A4EEA8DD9E3E48DFD /* DetailViewOutput.swift */,
 				3A4E00EA3647F860422B5D89 /* DetailViewController.swift */,
 				44ACE06324BE03830034ACB0 /* DetailView.swift */,
+				44ACE06524BE09D30034ACB0 /* DetailViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				09A5A0EF41A860B5B2D23D29 /* DetailInteractorInput.swift in Sources */,
 				CF8BF0E33783A040F0446433 /* DetailInteractorOutput.swift in Sources */,
 				115618876F3DE2CB8614A13B /* DetailInteractor.swift in Sources */,
+				44ACE06624BE09D30034ACB0 /* DetailViewModel.swift in Sources */,
 				20082383226FDC3F81D42A35 /* DetailRouterInput.swift in Sources */,
 				48202598A286473EC6C77ACC /* DetailRouter.swift in Sources */,
 				5E130B28170139D9BD37E156 /* DetailConfigurator.swift in Sources */,

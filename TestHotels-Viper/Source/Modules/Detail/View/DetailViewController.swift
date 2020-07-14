@@ -12,11 +12,6 @@ class DetailViewController: UIViewController, DetailViewInput {
 
     var output: DetailViewOutput!
     private var detailView: DetailView!
-
-//    private var hotel: Hotel
-//    private var hotelDetails: HotelDetails? = nil
-//    private var hotelImage = UIImage()
-//    private let noDataText = "no data"
     
     override func loadView() {
         detailView = DetailView()
@@ -35,6 +30,16 @@ class DetailViewController: UIViewController, DetailViewInput {
 
     // MARK: DetailViewInput
     func setupInitialState() {
+    }
+
+    func updateView(with data: DetailViewModel) {
+        detailView.nameLabel.text = data.name
+        detailView.addressLabel.text = data.address
+        detailView.lattitudeLabel.text = data.lat
+        detailView.longtitudeLabel.text = data.lon
+        detailView.distanceLabel.text = data.distance
+        detailView.starsLabel.text = data.stars
+        detailView.suitesAvailableLabel.text = data.suitesAvailability
     }
 }
 

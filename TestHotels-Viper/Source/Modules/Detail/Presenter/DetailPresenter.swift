@@ -13,6 +13,19 @@ class DetailPresenter: DetailModuleInput, DetailViewOutput, DetailInteractorOutp
     var router: DetailRouterInput!
 
     func viewIsReady() {
+        view.updateView(with: prepareViewModel())
+        interactor.loadData()
+    }
 
+    func prepareViewModel() -> DetailViewModel {
+        let details = interactor.getData()
+        return DetailViewModel(
+            lat: "Lattitude: \(details.lat)",
+            lon: "Longtitude: \(details.lon)",
+            name: details.name,
+            address: "Address: \(details.address)",
+            stars: "⭐️: \(details.stars)",
+            distance: "Distance from center: \(details.distance)",
+            suitesAvailability: "Suites available: " + details.suitesAvailability.joined(separator: ", "))
     }
 }

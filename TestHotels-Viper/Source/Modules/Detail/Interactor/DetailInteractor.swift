@@ -13,4 +13,12 @@ class DetailInteractor: DetailInteractorInput {
     var hotel: Hotel? = nil
     var hotelDetails: HotelDetails? = nil
     let noDataText = "no data"
+
+    func getData() -> HotelDetails {
+        
+    }
+
+    func loadData() {
+
+    }
 }
